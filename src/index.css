@@ -6,6 +6,26 @@
     --color-secondary: #0b0b0c;
     --color-on-secondary: #FFFFFF;
     --color-surface: #131316;
+
+
+    --shadow-neon: 0 0 20px var(--color-primary);
+    --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+
+    --animate-float: float 6s ease-in-out infinite;
+    --animate-aurora: aurora 15s linear infinite;
+
+    @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+    }
+    @keyframes aurora {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+}
+
 :root[data-mode="light"] {
     --color-primary: #1DB954;
     --color-on-primary: #FFFFFF;
@@ -41,4 +61,34 @@
         rounded-3xl p-6 transition-all duration-500
         hover:border-primary/20 hover:bg-surface/50;
     }
+
+    .text-gradient {
+        @apply bg-gradient-to-r from-primary via-on-secondary to-primary
+        bg-clip-text text-transparent bg-[length:200%_auto] animate-aurora;
+    }
+}
+
+@utility hover-shine {
+    position: relative;
+    overflow: hidden;
+    &:after {
+        content: '';
+        position: absolute;
+        top: -50%; left: -60%; width: 30%; height: 200%;
+        background: rgba(255, 255, 255, 0.13);
+        transform: rotate(30deg);
+        transition: none;
+    }
+    &:hover:after {
+        left: 140%;
+        transition: all 0.6s ease-in-out;
+    }
+}
+
+@utility scrollbar-none {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }

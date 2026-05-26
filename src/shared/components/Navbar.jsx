@@ -1,4 +1,5 @@
 import React from "react";
+import {ModeToggleButton, ThemeToggleButton} from "./themeButtons.jsx";
 
 function Navbar() {
     return (
@@ -7,6 +8,8 @@ function Navbar() {
                 Statify.
         </div>
             <div className="flex items-center justify-between gap-4">
+            <ModeToggleButton />
+            <ThemeToggleButton />
         <button className="hidden sm:block text-on-secondary/70 hover:text-primary transition-colors font-medium">
             Infos Créateur
         </button>

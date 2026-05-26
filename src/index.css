@@ -6,4 +6,26 @@
     --color-secondary: #0b0b0c;
     --color-on-secondary: #FFFFFF;
     --color-surface: #131316;
+:root[data-mode="light"] {
+    --color-primary: #1DB954;
+    --color-on-primary: #FFFFFF;
+    --color-secondary: #FAFAFA;
+    --color-on-secondary: #121212;
+    --color-surface: #FFFFFF;
+}
+
+:root[data-theme="purple"] {
+    --color-primary: #7C3AED;
+    --color-on-primary: #FFFFFF;
+}
+
+@layer base {
+    body {
+        background-color: var(--color-secondary);
+        color: var(--color-on-secondary);
+        margin: 0;
+        font-family: system-ui, -apple-system, sans-serif;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+}
 }

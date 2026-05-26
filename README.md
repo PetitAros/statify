@@ -93,3 +93,5 @@ L'application utilise les fonctionnalités avancées de **Tailwind CSS v4**. Vou
 *Note : Une vidéo montrant les principales feature se trouvent dans le dossier `/src/assets/demo.mp4`*
 
 Une démo se trouve à l'adresse `https://statify-theta.vercel.app/` que si l'adresse mail de l'utilisateur a été enregistré dans le compte spotify Developper.
+
+Basé sur le projet https://statify.zectan.com (pour le nom principalement). Features faites, sans avoir consulté plus le site, après découverte de l'API Spotify sur Reddit.

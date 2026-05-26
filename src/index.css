@@ -28,4 +28,17 @@
         transition: background-color 0.3s ease, color 0.3s ease;
     }
 }
+
+@layer components {
+    .btn-spotify {
+        @apply inline-flex items-center justify-center font-bold text-base px-8 py-3.5
+        rounded-full transition-all duration-300 cursor-pointer text-on-primary bg-primary
+        hover:scale-105 hover:shadow-neon;
+    }
+
+    .card-glass {
+        @apply bg-surface/30 backdrop-blur-xl border border-white/5 shadow-glass
+        rounded-3xl p-6 transition-all duration-500
+        hover:border-primary/20 hover:bg-surface/50;
+    }
 }

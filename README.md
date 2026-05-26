@@ -29,7 +29,7 @@ Assurez-vous d'avoir [Node.js](https://nodejs.org/) installé sur votre machine.
 
 ### 2. Cloner le projet
 ```bash
-git clone [https://github.com/votre-utilisateur/statify-app.git](https://github.com/votre-utilisateur/statify-app.git)
+git clone [https://github.com/PetitAros/statify.git](https://github.com/PetitAros/statify.git)
 cd statify-app
 ```
 

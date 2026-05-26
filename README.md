@@ -1,3 +1,5 @@
+# Erwan LECOMTE M1IW
+
 # Statify App
 
 Une application web moderne, fluide et sécurisée permettant d'accéder aux statistiques d'écoute Spotify en temps réel. Découvrez vos morceaux favoris, votre historique récent ainsi que votre musique en cours de lecture à travers une interface optimisée avec les dernières fonctionnalités de Tailwind CSS.

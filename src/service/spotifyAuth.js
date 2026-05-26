@@ -1,5 +1,5 @@
 const CLIENT_ID = import.meta.env.VITE_SPOTIFY_CLIENT_ID;
-const REDIRECT_URI = "http://127.0.0.1:5173/";
+const REDIRECT_URI = import.meta.env.VITE_SPOTIFY_REDIRECT_URL;
 const SCOPES = ["user-read-currently-playing", "user-read-recently-played", "user-top-read"];
 
 export async function redirectToAuthCodeFlow() {
